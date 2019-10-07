@@ -1,0 +1,629 @@
+/*--------------------------------------------- ----------------------------------*/
+/*-----------------------------------Basic Setup ----------------------------------*/
+/*--------------------------------------------- ----------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #555;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*--------------------------------------------- ----------------------------------*/
+/*----------------------------------REUSABLE COMPONENT ----------------------------------*/
+/*--------------------------------------------- ----------------------------------*/
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 80px 0px;
+}
+
+.box {
+  padding: 1%;
+}
+
+/*--------------------------------------------- ----------------------------------*/
+/*-----------------------------------HEADER ----------------------------------*/
+/*--------------------------------------------- ----------------------------------*/
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/kochi-chair.jpg) no-repeat center center fixed;
+  background-size: cover;
+
+  height: 100vh;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*--------------------------------------------- ----------------------------------*/
+/*----------------------------------HEADING ----------------------------------*/
+/*--------------------------------------------- ----------------------------------*/
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 200%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #c49404dc;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+/*PARAGRAPG*/
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+/*ICON*/
+
+.big-icon {
+  font-size: 200%;
+  display: block;
+  color: #c49404dc;
+  margin-bottom: 10px;
+}
+
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #c49404dc;
+  font-size: 190%;
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-right: 10px;
+}
+
+/*-----------------------------------LINKS----------------------------------*/
+a:link,
+a:visited {
+  color: #c49404dc;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: solid 1px #c49404dc;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: solid 1px transparent;
+}
+
+#logo-link:link {
+  border: 0;
+}
+
+/*--------------------------------------------- ----------------------------------*/
+/*-----------------------------------BUTTONS----------------------------------*/
+/*--------------------------------------------- ----------------------------------*/
+
+.btn:link,
+.btn:visited,
+input[type="submit"] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  background-color: #c49404dc;
+  color: black;
+  transition: background-color 0.2s;
+}
+
+.btn:hover,
+input[type="submit"]:hover {
+  background-color: #6d5203dc;
+  cursor: pointer;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  margin-top: 10px;
+  float: left;
+}
+
+.logo-min {
+  display: none;
+  height: 50px;
+  width: auto;
+  margin-top: 5px;
+  float: left;
+}
+
+/*------------------------------- Main nav--------------------------------------------*/
+#nav {
+  transition: all 1s;
+  z-index: 9999;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 20px;
+  color: #c49404dc;
+  transition: all 0.5s;
+}
+
+.main-nav li {
+  display: inline;
+  margin-left: 40px;
+  transition: all 0.5s;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0px;
+  text-decoration: none;
+  color: #c49404dc;
+  font-size: 90%;
+  text-transform: uppercase;
+  transition: border-bottom 0.5s;
+  border: none;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #c49404dc;
+}
+
+.section-features .long-copy {
+  margin-bottom: 40px;
+}
+
+.section-features {
+  padding-bottom: 0;
+  margin-bottom: 30px;
+}
+
+/*Sticky nav-------------------------------------------------------------------*/
+
+.whole-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(rgb(15, 15, 11), rgba(17, 12, 12, 0.644));
+  z-index: 99;
+  transition: all 0.8s;
+}
+
+#nav {
+  transition: all 1s;
+}
+
+.whole-nav .main-nav li a:link,
+.whole-nav .main-nav li a:visited {
+  padding: 8px 0px;
+  text-decoration: none;
+  font-size: 70%;
+}
+
+.whole-nav .logo {
+  display: none;
+}
+
+.whole-nav .logo-min {
+  display: block;
+}
+
+.mobile-nav-icon {
+  float: right;
+  margin: 10px 10px 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger {
+  font-size: 180%;
+  color: #c49404dc;
+  transition: all 1s;
+}
+
+.cross {
+  font-size: 180%;
+  color: #c49404dc;
+  display: none;
+  transition: all 1s;
+}
+
+/*--------------------------------------------- ----------------------------------*/
+/*-----------------------------------MEALS----------------------------------*/
+/*--------------------------------------------- ----------------------------------*/
+.section-meals {
+  padding: 0;
+}
+
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.meals-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.meals-photo img {
+  opacity: 0.5;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.meals-photo img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+  transition: transform 0.5s, opacity 0.5ss;
+}
+
+/*--------------------------------------------- ----------------------------------*/
+/*-----------------------------------SECTION How it works-------------------------*/
+/*--------------------------------------------- ----------------------------------*/
+
+.section-steps {
+  background-color: rgba(196, 196, 196, 0.469);
+  margin-top: 0;
+}
+
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+
+.steps-box:last-child {
+  padding-left: 3%;
+  margin-top: 70px;
+}
+
+.app-screen {
+  width: 40%;
+}
+
+.works-step {
+  margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+  margin-bottom: 80px;
+}
+
+.works-step div {
+  color: #c49404dc;
+  border: 2px solid #c49404dc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  padding: 10px;
+  float: left;
+  font-size: 150%;
+  margin-right: 25px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+  border: 0;
+}
+
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+/*--------------------------------------------- ----------------------------------*/
+/*-----------------------------------CITIES-------------------------*/
+/*--------------------------------------------- ----------------------------------*/
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.city-feature {
+  margin-bottom: 5px;
+}
+
+/*--------------------------------------------- ----------------------------------*/
+/*-----------------------------------Testimonials-------------------------*/
+/*--------------------------------------------- ----------------------------------*/
+
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.678)),
+    url(../img/the-gang.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+}
+
+blockquote::before {
+  content: "\201C";
+  font-size: 300%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+cite {
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+}
+
+cite img {
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/*--------------------------------------------- ----------------------------------*/
+/*-----------------------------------Testimonials-------------------------*/
+/*--------------------------------------------- ----------------------------------*/
+
+.section-plans {
+  background-color: rgba(196, 196, 196, 0.469);
+}
+
+.plan-box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 2px 2px;
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid rgb(218, 215, 215);
+}
+
+.plan-box div:last-child {
+  text-align: center;
+}
+
+.plan-box div:first-child {
+  background-color: rgb(250, 250, 250);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.plan-price {
+  font-size: 200%;
+  margin-bottom: 10px;
+  font-weight: 100%;
+}
+
+.plan-price-meal {
+  font-size: 80%;
+}
+
+.plan-box span {
+  color: #c49404dc;
+  text-transform: capitalize;
+  font-size: 80%;
+}
+
+.plan-box ul {
+  list-style-type: none;
+}
+
+.plan-box ul li {
+  padding: 5px 0;
+}
+
+/*--------------------------------------------- ----------------------------------*/
+/*-----------------------------------Form-------------------------*/
+/*--------------------------------------------- ----------------------------------*/
+
+.section-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #cccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+
+/*--------------------------------------------- ----------------------------------*/
+/*----------------------------------FOOTER ----------------------------------*/
+/*--------------------------------------------- ----------------------------------*/
+
+footer {
+  background-color: rgb(105, 105, 105);
+  padding: 50px;
+  font-size: 80%;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: rgb(199, 191, 176);
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: rgb(199, 191, 176);
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.social-links li a:hover,
+.social-links li a:active {
+  color: #fff;
+}
+
+footer p {
+  color: rgb(199, 191, 176);
+  text-align: center;
+}
+
+.social-ins:hover {
+  color: #e4405f;
+}
+
+.social-face:hover {
+  color: #3b5999;
+}
+
+.social-tw:hover {
+  color: #55acee;
+}
+
+.social-linkd:hover {
+  color: #0077b5;
+}
+
+/*----------------------------------ANimate ----------------------------------*/
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  opacity: 0;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+  opacity: 1;
+}
+
+/*----------------------------------ANimate ----------------------------------*/
+.main-plan {
+  /*  display: flex;
+  flex-direction: column; */
+}
+
+.img-plan {
+  display: none;
+  justify-content: flex-end;
+  /*  top: 0;
+  right: 0;
+  float: right; */
+  width: 200px;
+  height: auto;
+}

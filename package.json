@@ -1,0 +1,24 @@
+{
+  "name": "via-balkan-koket",
+  "version": "1.0.0",
+  "description": "Via Balkan Köket",
+  "main": "index.js",
+  "homepage": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diyarfaraj/via-balkan-koket.git"
+  },
+  "author": "Diyar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diyarfaraj/via-balkan-koket.git"
+  },
+  "dependencies": {
+    "gh-pages": "^2.1.1",
+    "waypoints": "^4.0.1"
+  }
+}
