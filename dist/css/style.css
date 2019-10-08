@@ -182,8 +182,8 @@ input[type="submit"]:hover {
 }
 
 .logo {
-	height: 100px;
-	width: auto;
+	height: 80px;
+	width: 200px;
 	margin-top: 10px;
 	float: left;
 }
@@ -191,7 +191,7 @@ input[type="submit"]:hover {
 .logo-min {
 	display: none;
 	height: 50px;
-	width: auto;
+	width: 100px;
 	margin-top: 5px;
 	float: left;
 }
