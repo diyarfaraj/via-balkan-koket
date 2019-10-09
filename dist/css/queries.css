@@ -94,9 +94,10 @@
   }
 
   .main-nav {
-    float: left;
-    margin-top: 25px;
-    margin-left: 25px;
+    float: right;
+    padding: 0;
+    margin: 0;
+
   }
 
   .main-nav li {

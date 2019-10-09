@@ -165,11 +165,12 @@ a:active {
 .btn:link,
 .btn:visited,
 input[type="submit"] {
+	border-radius: 20px;
 	display: inline-block;
 	padding: 10px 30px;
 	font-weight: 300;
 	text-decoration: none;
-	background-color: #c49404dc;
+	background-color: white;
 	color: black;
 	transition: background-color 0.2s;
 }
@@ -262,6 +263,7 @@ input[type="submit"]:hover {
 	padding: 8px 0px;
 	text-decoration: none;
 	font-size: 70%;
+
 }
 
 .whole-nav .logo {
@@ -274,14 +276,14 @@ input[type="submit"]:hover {
 
 .mobile-nav-icon {
 	float: right;
-	margin: 10px 10px 10px;
 	cursor: pointer;
 	display: none;
+	margin: 20px 20px 0 0;
 }
 
 .hamburger {
 	font-size: 180%;
-	color: #c49404dc;
+	color: white;
 	transition: all 1s;
 }
 
@@ -379,7 +381,7 @@ input[type="submit"]:hover {
 
 .btn-app:link,
 .btn-app:visited {
-	border: 0;
+	border: 20px;
 }
 
 .btn-app img {
