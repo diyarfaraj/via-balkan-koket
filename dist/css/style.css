@@ -49,10 +49,10 @@ section {
 /*-----------------------------------HEADER ----------------------------------*/
 /*--------------------------------------------- ----------------------------------*/
 header {
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+	/* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
 		url(../img/balkan.jpg) no-repeat center center fixed;
 	background-size: cover;
-
+ */
 	height: 100vh;
 }
 
@@ -171,18 +171,20 @@ input[type="submit"] {
 	font-weight: 300;
 	text-decoration: none;
 	background-color: #d8d8d8dc;
-	color: black;
+	color: #1c1614;
 	transition: background-color 0.2s;
 }
 
-.btn-hitta {
+.btn-hitta:link,
+.btn-hitta:visited {
 	border: solid #d8d8d8dc 1px;
-	background-color: red;
+	background-color: transparent;
+	color: #d8d8d8dc;
 }
 
 .btn:hover,
 input[type="submit"]:hover {
-	background-color: #6d5203dc;
+	background-color: #233623;
 	cursor: pointer;
 }
 
@@ -205,7 +207,7 @@ input[type="submit"]:hover {
 	transition: all 1s;
 	z-index: 9999;
 	background: #1c1614;
-	border-bottom: solid #0b5643;
+	border-bottom: solid #01271e;
 }
 
 .main-nav {
@@ -236,7 +238,7 @@ input[type="submit"]:hover {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-	border-bottom: 2px solid #ffffffdc;
+	border-bottom: 2px solid #01271e;
 }
 
 .section-features .long-copy {
@@ -269,7 +271,6 @@ input[type="submit"]:hover {
 	padding: 8px 0px;
 	text-decoration: none;
 	font-size: 70%;
-
 }
 
 .whole-nav .logo {
@@ -284,7 +285,7 @@ input[type="submit"]:hover {
 	float: right;
 	cursor: pointer;
 	display: none;
-	margin: 20px 20px 0 0;
+	margin: 15px 20px 0 0;
 }
 
 .hamburger {
