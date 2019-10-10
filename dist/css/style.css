@@ -76,7 +76,7 @@ h3 {
 h1 {
 	margin: 0;
 	margin-bottom: 20px;
-	color: #fff;
+	color: #d8d8d8dc;
 	font-size: 200%;
 	word-spacing: 4px;
 	letter-spacing: 1px;
@@ -170,9 +170,14 @@ input[type="submit"] {
 	padding: 10px 30px;
 	font-weight: 300;
 	text-decoration: none;
-	background-color: white;
+	background-color: #d8d8d8dc;
 	color: black;
 	transition: background-color 0.2s;
+}
+
+.btn-hitta {
+	border: solid #d8d8d8dc 1px;
+	background-color: red;
 }
 
 .btn:hover,
@@ -184,14 +189,13 @@ input[type="submit"]:hover {
 .logo {
 	height: 80px;
 	width: 200px;
-	margin-top: 10px;
 	float: left;
 }
 
 .logo-min {
 	display: none;
 	height: 50px;
-	width: 100px;
+	width: 150px;
 	margin-top: 5px;
 	float: left;
 }
@@ -200,6 +204,8 @@ input[type="submit"]:hover {
 #nav {
 	transition: all 1s;
 	z-index: 9999;
+	background: #1c1614;
+	border-bottom: solid #0b5643;
 }
 
 .main-nav {
@@ -221,7 +227,7 @@ input[type="submit"]:hover {
 .main-nav li a:visited {
 	padding: 8px 0px;
 	text-decoration: none;
-	color: #ffffffdc;
+	color: #d8d8d8dc;
 	font-size: 90%;
 	text-transform: uppercase;
 	transition: border-bottom 0.5s;
@@ -282,7 +288,7 @@ input[type="submit"]:hover {
 }
 
 .hamburger {
-	font-size: 180%;
+	font-size: 220%;
 	color: white;
 	transition: all 1s;
 }
