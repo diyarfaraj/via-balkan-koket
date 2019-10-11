@@ -6,10 +6,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
 }
-
-
 
 html {
 	color: #555;
@@ -18,7 +15,6 @@ html {
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
 	scroll-behavior: smooth;
-
 }
 
 .clearfix {
@@ -123,15 +119,15 @@ header {
 }
 
 .cb-slideshow li div h3 {
-	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-	font-size: 160px;
+	font-size: 300%;
 	padding: 0 30px;
 	line-height: 120px;
-	color: rgba(169, 3, 41, 0.8);
+	color: #043927;
+	text-shadow: 2px 2px 3px white;
 }
 
 .cb-slideshow li:nth-child(1) span {
-	background-image: url(../img/via-balkan-koket/kassan.jpg);
+	background-image: url(../img/via-balkan-koket/Cevapi-1.jpg);
 }
 
 .cb-slideshow li:nth-child(2) span {
@@ -144,7 +140,7 @@ header {
 }
 
 .cb-slideshow li:nth-child(3) span {
-	background-image: url(../img/via-balkan-koket/cevapi-när.jpg);
+	background-image: url(../img/via-balkan-koket/cevapi-3.jpg);
 	-webkit-animation-delay: 12s;
 	-moz-animation-delay: 12s;
 	-o-animation-delay: 12s;
@@ -153,7 +149,7 @@ header {
 }
 
 .cb-slideshow li:nth-child(4) span {
-	background-image: url(../img/via-balkan-koket/bröd.jpg);
+	background-image: url(../img/via-balkan-koket/cevapi-2.jpg);
 	-webkit-animation-delay: 18s;
 	-moz-animation-delay: 18s;
 	-o-animation-delay: 18s;
@@ -750,7 +746,7 @@ input[type="submit"]:hover {
 }
 
 .hamburger {
-	font-size: 220%;
+	font-size: 215%;
 	color: white;
 	transition: all 1s;
 }
@@ -809,7 +805,6 @@ input[type="submit"]:hover {
 .section-steps {
 	background-color: rgb(228, 225, 225);
 	margin-top: 0;
-
 }
 
 .steps-box:first-child {
@@ -921,7 +916,6 @@ cite img {
 
 .section-plans {
 	background-color: rgba(196, 196, 196, 0.469);
-
 }
 
 .plan-box {
