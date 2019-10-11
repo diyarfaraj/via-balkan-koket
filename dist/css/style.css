@@ -706,7 +706,7 @@ input[type="submit"]:hover {
 
 .section-features {
 	padding-bottom: 0;
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 	z-index: 99999;
 	background: white;
 }
@@ -921,7 +921,7 @@ cite img {
 
 .section-plans {
 	background-color: rgba(196, 196, 196, 0.469);
-	background: white;
+
 }
 
 .plan-box {
