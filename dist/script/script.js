@@ -71,3 +71,35 @@ $(document).ready(function() {
 		}
 	});
 });
+
+// Opening hours
+const restSign = document.querySelector('#openHours');
+
+let d = new Date();
+let n = d.getDay();
+let now = d.getHours() + '.' + d.getMinutes();
+var weekdays = [
+	[ 'Söndag', 11.0, 20.0 ],
+	[ 'Måndag', 10.0, 20.0 ],
+	[ 'Tisdag', 10.0, 20.0 ],
+	[ 'Onsdag', 10.0, 20.0 ],
+	[ 'Thursday', 10.0, 20.0 ],
+	[ 'Friday', 10.0, 20.0 ],
+	[ 'Lördag', 10.0, 14.0 ]
+];
+var day = weekdays[n];
+
+if ((now > day[1] && now < day[2]) || (now > day[3] && now < day[4])) {
+	console.log(day[4]);
+	const markUp = `
+	<h3>Öppet idag till kl ${day[2]}:00</h3>
+	
+	`;
+	restSign.innerHTML = markUp;
+} else {
+	const markUp2 = `
+	<h3>Stängd just nu. Öppnar imorgon kl ${day[0] === 'Lördag' ? 11 : 10}:00</h3>
+	
+	`;
+	restSign.innerHTML = markUp2;
+}

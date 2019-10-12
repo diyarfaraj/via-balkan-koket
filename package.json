@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Via Balkan Köket",
   "main": "index.js",
-  "homepage": "",
+  "homepage": "https://diyarfaraj.github.io/via-balkan-koket",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gh-pages -d dist"
