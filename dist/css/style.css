@@ -57,13 +57,19 @@ header {
 .hero-text-box {
 	position: absolute;
 	width: 1140px;
-	top: 50%;
+	top: 60%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 
-#openHours h3 {
+#openHours {
+	margin-top: 15px;
+}
+
+#openHours h3,
+#openHours h5 {
 	color: rgb(228, 228, 228);
+	text-shadow: 1px 1px 1px #000;
 }
 
 /*------------------- SLIDESHOW BG-----------------*/
@@ -125,7 +131,7 @@ header {
 	padding: 0 30px;
 	line-height: 120px;
 	color: #043927;
-	text-shadow: 1px 1px 1px rgb(131, 184, 144);
+	text-shadow: 1px 1px 1px rgb(119, 170, 132);
 }
 
 .cb-slideshow li:nth-child(1) span {
@@ -520,7 +526,7 @@ h3 {
 h1 {
 	margin: 0;
 	margin-bottom: 20px;
-	color: #d8d8d8dc;
+	color: rgb(228, 228, 228);
 	font-size: 200%;
 	word-spacing: 4px;
 	letter-spacing: 1px;
@@ -614,23 +620,23 @@ input[type="submit"] {
 	padding: 10px 30px;
 	font-weight: 300;
 	text-decoration: none;
-	background-color: #d8d8d8dc;
+	background-color: rgb(228, 228, 228);
 	color: #1c1614;
 	transition: background-color 0.2s;
 }
 
 .btn-hitta:link,
 .btn-hitta:visited {
-	border: solid #d8d8d8dc 1px;
+	border: solid rgb(228, 228, 228) 1px;
 	background-color: transparent;
-	color: #d8d8d8dc;
+	color: rgb(228, 228, 228);
 }
 
 .btn:hover,
 input[type="submit"]:hover {
 	background-color: #233623;
 	cursor: pointer;
-	color: #d8d8d8dc;
+	color: rgb(228, 228, 228);
 }
 
 .logo {
@@ -674,7 +680,7 @@ input[type="submit"]:hover {
 .main-nav li a:visited {
 	padding: 8px 0px;
 	text-decoration: none;
-	color: #d8d8d8dc;
+	color: rgb(228, 228, 228);
 	font-size: 90%;
 	text-transform: uppercase;
 	transition: border-bottom 0.5s;
@@ -737,7 +743,7 @@ input[type="submit"]:hover {
 
 .hamburger {
 	font-size: 215%;
-	color: white;
+	color: rgb(228, 228, 228);
 	transition: all 1s;
 }
 
@@ -905,7 +911,7 @@ cite img {
 /*--------------------------------------------- ----------------------------------*/
 
 .section-plans {
-	background-color: rgba(196, 196, 196, 0.469);
+	background-color: rgba(196, 196, 196, 1);
 }
 
 .plan-box {
