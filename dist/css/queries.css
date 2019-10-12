@@ -66,6 +66,10 @@
   .contact-form {
     width: 100%;
   }
+
+  .cb-slideshow li div h3 {
+    font-size: 200%;
+  }
 }
 
 /*small to medium screnns 480px to 767 */
@@ -161,7 +165,9 @@
     width: 100%;
   }
 
-  .logo {}
+  .cb-slideshow li div h3 {
+    font-size: 250%;
+  }
 }
 
 /*SMall screens 0 to 480px */
@@ -174,3 +180,12 @@
     width: 100%;
   }
 }
+
+/* Show at least something when animations not supported */
+.no-cssanimations .cb-slideshow li span {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1140px) {}
+
+@media screen and (max-width: 600px) {}
