@@ -855,6 +855,10 @@ input[type="submit"]:hover {
 /*-----------------------------------CITIES-------------------------*/
 /*--------------------------------------------- ----------------------------------*/
 
+.section-cities {
+	background: rgb(211, 209, 209);
+}
+
 .box img {
 	width: 100%;
 	height: auto;
@@ -864,6 +868,33 @@ input[type="submit"]:hover {
 .city-feature {
 	margin-bottom: 5px;
 }
+
+.section-cities .phoneNumber {
+	text-decoration: none;
+	color: rgb(57, 71, 60);
+	border: none;
+
+}
+
+.section-cities h3 {
+	font-weight: bold;
+	color: rgb(68, 66, 66);
+}
+
+.kCmrbf div {
+	margin-top: -10px
+}
+
+.kCmrbf {
+	margin-top: 40px
+}
+
+.x2TOCf {
+	text-align: left;
+	padding-right: 5px;
+
+}
+
 
 /*--------------------------------------------- ----------------------------------*/
 /*-----------------------------------Testimonials-------------------------*/
@@ -912,6 +943,7 @@ cite img {
 
 .section-plans {
 	background-color: rgba(196, 196, 196, 1);
+	margin-top: -21px;
 }
 
 .plan-box {
@@ -1089,4 +1121,23 @@ footer p {
   float: right; */
 	width: 200px;
 	height: auto;
+}
+
+.gmap_canvas {
+
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 60%;
+	width: 100%;
+	/* desired aspect ratio */
+	position: relative;
+}
+
+.gmap_canvas iframe {
+	border: 0;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
