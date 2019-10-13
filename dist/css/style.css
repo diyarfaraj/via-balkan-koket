@@ -66,9 +66,13 @@ header {
 	margin-top: 15px;
 }
 
-#openHours h3,
+#openHours h3 {
+	color: rgb(241, 241, 241);
+	text-shadow: 1px 1px 1px #000;
+}
+
 #openHours h5 {
-	color: rgb(228, 228, 228);
+	color: rgb(108, 177, 128);
 	text-shadow: 1px 1px 1px #000;
 }
 
@@ -580,12 +584,14 @@ h3 {
 	display: inline-block;
 	width: 30px;
 	text-align: center;
-	color: #c49404dc;
+	color: rgb(53, 109, 53);
 	font-size: 190%;
 	line-height: 120%;
 	vertical-align: middle;
 	margin-top: -4px;
 	margin-right: 10px;
+
+
 }
 
 /*-----------------------------------LINKS----------------------------------*/
@@ -658,7 +664,7 @@ input[type="submit"]:hover {
 	transition: all 1s;
 	z-index: 9999;
 	background: #1c1614;
-	border-bottom: solid #01271e;
+	border-bottom: solid rgb(3, 92, 3);
 }
 
 .main-nav {
@@ -799,7 +805,7 @@ input[type="submit"]:hover {
 /*--------------------------------------------- ----------------------------------*/
 
 .section-steps {
-	background-color: rgb(228, 225, 225);
+	background-color: rgb(255, 255, 255);
 	margin-top: 0;
 }
 
@@ -856,7 +862,11 @@ input[type="submit"]:hover {
 /*--------------------------------------------- ----------------------------------*/
 
 .section-cities {
-	background: rgb(211, 209, 209);
+	z-index: 999999;
+	background: linear-gradient(#dad9d8, #c4c3c3);
+	background-size: cover;
+	color: #181717;
+
 }
 
 .box img {
@@ -871,30 +881,29 @@ input[type="submit"]:hover {
 
 .section-cities .phoneNumber {
 	text-decoration: none;
-	color: rgb(57, 71, 60);
+	color: #181717;
 	border: none;
-
 }
 
 .section-cities h3 {
 	font-weight: bold;
-	color: rgb(68, 66, 66);
+	color: #181717;
 }
 
+
+
 .kCmrbf div {
-	margin-top: -10px
+	margin-top: -10px;
 }
 
 .kCmrbf {
-	margin-top: 40px
+	margin-top: 40px;
 }
 
 .x2TOCf {
 	text-align: left;
 	padding-right: 5px;
-
 }
-
 
 /*--------------------------------------------- ----------------------------------*/
 /*-----------------------------------Testimonials-------------------------*/
@@ -942,21 +951,35 @@ cite img {
 /*--------------------------------------------- ----------------------------------*/
 
 .section-plans {
-	background-color: rgba(196, 196, 196, 1);
+	background-color: #1c1614;
 	margin-top: -21px;
+	color: rgb(231, 231, 231);
 }
 
 .plan-box {
-	background-color: #fff;
+	background-color: #1c1614;
 	border-radius: 5px;
 	width: 90%;
 	margin-left: 5%;
 	box-shadow: 0 2px 2px;
 }
 
+.lunch {
+	display: inline-block;
+	text-align: center;
+	margin-left: 20px;
+	height: 47px;
+	width: 130px;
+	transform: rotate(-5deg);
+	background: rgb(3, 92, 3);
+	color: white;
+	border-radius: 50%;
+
+}
+
 .plan-box div {
 	padding: 15px;
-	border-bottom: 1px solid rgb(218, 215, 215);
+	border-bottom: 1px solid rgb(3, 92, 3);
 }
 
 .plan-box div:last-child {
@@ -964,12 +987,14 @@ cite img {
 }
 
 .plan-box div:first-child {
-	background-color: rgb(250, 250, 250);
+	background-color: #1c1614;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
+	border-top: 1px rgb(221, 221, 221);
 }
 
-.plan-price {
+.plan-price,
+.plan-price-lunch {
 	font-size: 200%;
 	margin-bottom: 10px;
 	font-weight: 100%;
@@ -980,8 +1005,7 @@ cite img {
 }
 
 .plan-box span {
-	color: #c49404dc;
-	text-transform: capitalize;
+	color: #1a9b70;
 	font-size: 80%;
 }
 
@@ -1124,7 +1148,6 @@ footer p {
 }
 
 .gmap_canvas {
-
 	height: 0;
 	overflow: hidden;
 	padding-bottom: 60%;
