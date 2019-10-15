@@ -33,8 +33,9 @@ html {
 /*----------------------------------REUSABLE COMPONENT ----------------------------------*/
 /*--------------------------------------------- ----------------------------------*/
 .row {
-	max-width: 1140px;
+	max-width: 1340px;
 	margin: 0 auto;
+	height: auto;
 }
 
 section {
@@ -139,12 +140,12 @@ header {
 }
 
 .cb-slideshow li:nth-child(1) span {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),
+	background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
 		url(../img/via-balkan-koket/Cevapi-1.jpg);
 }
 
 .cb-slideshow li:nth-child(2) span {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),
+	background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
 		url(../img/via-balkan-koket/grill-kött-bröd.jpg);
 	-webkit-animation-delay: 6s;
 	-moz-animation-delay: 6s;
@@ -154,7 +155,7 @@ header {
 }
 
 .cb-slideshow li:nth-child(3) span {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)),
+	background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
 		url(../img/via-balkan-koket/cevapi-3.jpg);
 	-webkit-animation-delay: 12s;
 	-moz-animation-delay: 12s;
@@ -164,7 +165,7 @@ header {
 }
 
 .cb-slideshow li:nth-child(4) span {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),
+	background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
 		url(../img/via-balkan-koket/ung-bröd.jpg);
 	-webkit-animation-delay: 18s;
 	-moz-animation-delay: 18s;
@@ -174,7 +175,7 @@ header {
 }
 
 .cb-slideshow li:nth-child(5) span {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(../img/via-balkan-koket/kaffe.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(../img/via-balkan-koket/kaffe.jpg);
 	-webkit-animation-delay: 24s;
 	-moz-animation-delay: 24s;
 	-o-animation-delay: 24s;
@@ -183,7 +184,7 @@ header {
 }
 
 .cb-slideshow li:nth-child(6) span {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(../img/via-balkan-koket/tårta.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(../img/via-balkan-koket/tårta.jpg);
 	-webkit-animation-delay: 30s;
 	-moz-animation-delay: 30s;
 	-o-animation-delay: 30s;
@@ -744,7 +745,7 @@ input[type="submit"]:hover {
 	float: right;
 	cursor: pointer;
 	display: none;
-	margin: 15px 20px 0 0;
+	margin: 12px 20px 0 0;
 }
 
 .hamburger {
@@ -946,21 +947,23 @@ cite img {
 	vertical-align: middle;
 }
 
+
+
 /*--------------------------------------------- ----------------------------------*/
 /*-----------------------------------Testimonials-------------------------*/
 /*--------------------------------------------- ----------------------------------*/
 
 .section-plans {
-	background-color: #1c1614;
+	background-color: #241f1e;
 	margin-top: -21px;
 	color: rgb(231, 231, 231);
 }
 
 .plan-box {
-	background-color: #1c1614;
+	background-color: #2e2b2a;
 	border-radius: 5px;
 	width: 90%;
-	margin-left: 5%;
+	margin-left: 3%;
 	box-shadow: 0 2px 2px;
 }
 
@@ -987,7 +990,7 @@ cite img {
 }
 
 .plan-box div:first-child {
-	background-color: #1c1614;
+	background-color: #2e2b2a;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	border-top: 1px rgb(221, 221, 221);
