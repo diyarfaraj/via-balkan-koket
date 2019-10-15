@@ -79,13 +79,13 @@ let d = new Date();
 let n = d.getDay();
 let now = d.getHours() + '.' + d.getMinutes();
 var weekdays = [
-	[ 'Söndag', 11.0, 20.0 ],
-	[ 'Måndag', 10.0, 20.0 ],
-	[ 'Tisdag', 10.0, 20.0 ],
-	[ 'Onsdag', 10.0, 20.0 ],
-	[ 'Torsdag', 10.0, 20.0 ],
-	[ 'Fredag', 10.0, 20.0 ],
-	[ 'Lördag', 10.0, 20.0 ]
+	[ 'Söndag', 9.0, 18.0 ],
+	[ 'Måndag', 8.0, 20.0 ],
+	[ 'Tisdag', 8.0, 20.0 ],
+	[ 'Onsdag', 8.0, 20.0 ],
+	[ 'Torsdag', 8.0, 20.0 ],
+	[ 'Fredag', 8.0, 20.0 ],
+	[ 'Lördag', 8.0, 20.0 ]
 ];
 var day = weekdays[n];
 
@@ -100,7 +100,7 @@ if ((now > day[1] && now < day[2]) || (now > day[3] && now < day[4])) {
 	const markUp2 = `
 	<h3>Stängd just nu. Öppnar ${now < day[1] ? 'idag' : 'imorgon'}  kl ${now > day[2] && day[0] === 'Lördag'
 		? 11
-		: now < day[1] && day[0] === 'Söndag' ? 11 : 10}:00</h3>
+		: now < day[1] && day[0] === 'Söndag' ? 9 : 8}:00</h3>
 		<h5>Lunchöppet mån-fre 69kr, kl 11:00 - 15:00</h5>
 		
 
