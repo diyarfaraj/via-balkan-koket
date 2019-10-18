@@ -114,7 +114,7 @@ const nowYear = new Date();
 const currYear = nowYear.getFullYear();
 
 const markUp3 = `
-	<p>&copy; ${currYear} Via Balkan Köket. By <a class="footer-link" href="https://www.facebook.com/GOTIS-Gothenburg-Interactive-Solutions-101507494607775">GOTIS</a> </p>
+	<p>&copy; ${currYear} Via Balkan Köket. By <a target="_blank" class="footer-link" href="https://www.facebook.com/GOTIS-Gothenburg-Interactive-Solutions-101507494607775">GOTIS</a> </p>
 	`;
 
 copyRight.innerHTML = markUp3;
